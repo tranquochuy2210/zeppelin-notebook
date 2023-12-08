@@ -1,0 +1,164 @@
+{
+  "paragraphs": [
+    {
+      "text": "%spark\n",
+      "user": "admin",
+      "dateUpdated": "2023-01-03 19:55:51.491",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1672808151490_1603818561",
+      "id": "paragraph_1672808151490_1603818561",
+      "dateCreated": "2023-01-03 19:55:51.491",
+      "status": "READY"
+    },
+    {
+      "text": "%spark\r\n\r\nprintln(\r\n\"\"\"%angular\r\n  \u003cdiv ng-include\u003d\"\u0027app/home/notebook.html\u0027\"\u003e\u003c/div\u003e\r\n\"\"\")",
+      "user": "admin",
+      "dateUpdated": "2023-01-03 19:41:23.183",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "org.apache.zeppelin.interpreter.InterpreterException: org.apache.zeppelin.interpreter.InterpreterException: Fail to open SparkInterpreter\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:76)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:833)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:741)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.FIFOScheduler.lambda$runJobInScheduler$0(FIFOScheduler.java:42)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.zeppelin.interpreter.InterpreterException: Fail to open SparkInterpreter\n\tat org.apache.zeppelin.spark.SparkInterpreter.open(SparkInterpreter.java:137)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:70)\n\t... 8 more\nCaused by: java.lang.reflect.InvocationTargetException\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.zeppelin.spark.BaseSparkScalaInterpreter.spark2CreateContext(BaseSparkScalaInterpreter.scala:299)\n\tat org.apache.zeppelin.spark.BaseSparkScalaInterpreter.createSparkContext(BaseSparkScalaInterpreter.scala:228)\n\tat org.apache.zeppelin.spark.SparkScala212Interpreter.open(SparkScala212Interpreter.scala:88)\n\tat org.apache.zeppelin.spark.SparkInterpreter.open(SparkInterpreter.java:121)\n\t... 9 more\nCaused by: java.lang.NullPointerException\n\tat org.apache.spark.SparkContext.\u003cinit\u003e(SparkContext.scala:640)\n\tat org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2672)\n\tat org.apache.spark.sql.SparkSession$Builder.$anonfun$getOrCreate$2(SparkSession.scala:945)\n\tat scala.Option.getOrElse(Option.scala:189)\n\tat org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:939)\n\t... 17 more\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1672671029234_1462601812",
+      "id": "paragraph_1672671029234_1462601812",
+      "dateCreated": "2023-01-02 05:50:29.234",
+      "dateStarted": "2023-01-03 19:40:07.127",
+      "dateFinished": "2023-01-03 19:41:08.364",
+      "status": "ERROR"
+    },
+    {
+      "text": "%md Hello ${name \u003d huy}\n",
+      "user": "admin",
+      "dateUpdated": "2023-01-03 18:34:24.911",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {
+          "name": {
+            "type": "TextBox",
+            "name": "name",
+            "displayName": "name",
+            "defaultValue": " huy",
+            "hidden": false
+          }
+        }
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eHello  huy\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1672395553049_435205144",
+      "id": "paragraph_1672395553049_435205144",
+      "dateCreated": "2022-12-30 01:19:13.049",
+      "dateStarted": "2023-01-03 18:34:24.913",
+      "dateFinished": "2023-01-03 18:34:25.046",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n",
+      "user": "admin",
+      "dateUpdated": "2022-12-30 01:20:00.642",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1672395600642_1700360959",
+      "id": "paragraph_1672395600642_1700360959",
+      "dateCreated": "2022-12-30 01:20:00.642",
+      "status": "READY"
+    },
+    {
+      "text": "%sh\n",
+      "user": "admin",
+      "dateUpdated": "2023-01-02 05:51:46.010",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1672671106009_1349194769",
+      "id": "paragraph_1672671106009_1349194769",
+      "dateCreated": "2023-01-02 05:51:46.009",
+      "status": "READY"
+    }
+  ],
+  "name": "note23",
+  "id": "2HMKHSS1H",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {}
+}
